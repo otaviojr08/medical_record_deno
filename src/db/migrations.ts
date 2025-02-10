@@ -1,7 +1,4 @@
-import { Database } from "jsr:@db/sqlite";
-
-// Conectar ao banco SQLite
-const db = new Database("medical_record.db");
+import db from "./database.ts";
 
 // Criar tabelas no SQLite
 db.exec(`
@@ -39,6 +36,3 @@ db.exec(`
 `);
 
 console.log("📌 Migrations executadas com sucesso!");
-
-// Exportar a instância do banco
-export default db;
