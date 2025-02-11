@@ -8,8 +8,8 @@ const PORT = 8369;
 
 // Configurar o CORS
 app.use(oakCors({
-  origin: '*', // Permite requisições de qualquer origem. Altere conforme necessário
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
 app.use(peopleRouter.routes());
