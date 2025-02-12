@@ -2,7 +2,6 @@ import { Application } from "jsr:@oak/oak";
 import peopleRouter from "./routes/api.routes.ts";
 import { oakCors } from 'https://deno.land/x/cors/mod.ts';
 
-
 const app = new Application();
 const PORT = 8369;
 
